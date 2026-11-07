@@ -1,0 +1,16 @@
+/* Apply before JS runs, including shelves loaded by infinite scrolling. */
+ytd-reel-shelf-renderer,
+ytd-rich-shelf-renderer[is-shorts],
+ytm-reel-shelf-renderer,
+ytm-shorts-lockup-view-model,
+yt-shorts-lockup-view-model,
+ytd-reel-item-renderer,
+[data-shorts-blocked],
+a[href="/shorts"],
+a[href^="/shorts/"],
+a[href^="https://www.youtube.com/shorts/"],
+ytd-rich-section-renderer:has(ytd-rich-shelf-renderer[is-shorts]),
+ytd-guide-entry-renderer:has(a[href^="/shorts"]),
+ytd-mini-guide-entry-renderer:has(a[href^="/shorts"]) {
+  display: none !important;
+}

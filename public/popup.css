@@ -1,0 +1,5 @@
+:root { color-scheme: light dark; font: 14px -apple-system, BlinkMacSystemFont, sans-serif; }
+body { width: 270px; margin: 0; padding: 24px; }
+h1 { font-size: 18px; margin: 14px 0 8px; }
+p { line-height: 1.5; }
+.hint { opacity: .7; font-size: 12px; }

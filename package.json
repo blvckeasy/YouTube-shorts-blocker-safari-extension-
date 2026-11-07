@@ -1,0 +1,22 @@
+{
+  "name": "youtube-shorts-blocker",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsx scripts/build.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx --test tests/*.test.ts",
+    "check": "npm run typecheck && npm test && npm run build",
+    "safari": "npm run build && tsx scripts/safari.ts"
+  },
+  "devDependencies": {
+    "@types/jsdom": "^21.1.0",
+    "@types/node": "^22.0.0",
+    "esbuild": "^0.25.0",
+    "jsdom": "^26.0.0",
+    "sharp": "^0.35.5",
+    "tsx": "^4.19.0",
+    "typescript": "^5.8.0"
+  }
+}
